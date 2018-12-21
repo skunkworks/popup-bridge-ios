@@ -20,7 +20,7 @@
     self.popupBridge = [[POPPopupBridge alloc] initWithWebView:self.webView delegate:self];
 
     [self.view addSubview:self.webView];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://braintree.github.io/popup-bridge-example/"]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://js-sdk-integration-venmo.herokuapp.com/v3/venmo?&merchant=venmo-sandbox&minified=false"]]];
 }
 
 - (void)popupBridge:(POPPopupBridge *)bridge requestsPresentationOfViewController:(UIViewController *)viewController {
